@@ -1,0 +1,3 @@
+[submodule "SpotifyiOS"]
+	path = SpotifyiOS
+	url = git@github.com:spotify/ios-sdk.git
