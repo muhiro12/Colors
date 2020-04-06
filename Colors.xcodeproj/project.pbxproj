@@ -15,6 +15,7 @@
 		ADEF797B243B30E3005E29B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADEF7979243B30E3005E29B1 /* LaunchScreen.storyboard */; };
 		ADEF7986243B30E3005E29B1 /* ColorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEF7985243B30E3005E29B1 /* ColorsTests.swift */; };
 		ADEF7991243B30E3005E29B1 /* ColorsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEF7990243B30E3005E29B1 /* ColorsUITests.swift */; };
+		ADEF79A2243B32F9005E29B1 /* SpotifyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADEF79A1243B32F9005E29B1 /* SpotifyiOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		ADEF798C243B30E3005E29B1 /* ColorsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADEF7990243B30E3005E29B1 /* ColorsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsUITests.swift; sourceTree = "<group>"; };
 		ADEF7992243B30E3005E29B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADEF799F243B32D9005E29B1 /* SpotifyiOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpotifyiOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		ADEF79A1243B32F9005E29B1 /* SpotifyiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpotifyiOS.framework; path = SpotifyiOS/SpotifyiOS.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADEF79A2243B32F9005E29B1 /* SpotifyiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +87,7 @@
 				ADEF7984243B30E3005E29B1 /* ColorsTests */,
 				ADEF798F243B30E3005E29B1 /* ColorsUITests */,
 				ADEF796C243B30E1005E29B1 /* Products */,
+				ADEF79A0243B32F8005E29B1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +107,7 @@
 				ADEF796E243B30E1005E29B1 /* AppDelegate.swift */,
 				ADEF7970243B30E1005E29B1 /* SceneDelegate.swift */,
 				ADEF7972243B30E1005E29B1 /* ContentView.swift */,
+				ADEF799F243B32D9005E29B1 /* SpotifyiOS-Bridging-Header.h */,
 				ADEF7974243B30E3005E29B1 /* Assets.xcassets */,
 				ADEF7979243B30E3005E29B1 /* LaunchScreen.storyboard */,
 				ADEF797C243B30E3005E29B1 /* Info.plist */,
@@ -134,6 +140,14 @@
 				ADEF7992243B30E3005E29B1 /* Info.plist */,
 			);
 			path = ColorsUITests;
+			sourceTree = "<group>";
+		};
+		ADEF79A0243B32F8005E29B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADEF79A1243B32F9005E29B1 /* SpotifyiOS.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -459,6 +473,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Colors/Preview Content\"";
 				DEVELOPMENT_TEAM = 66PKF55HK5;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SpotifyiOS",
+				);
 				INFOPLIST_FILE = Colors/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -466,6 +484,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nakano.hiromu.Colors;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT)/SpotifyiOS-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -479,6 +498,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Colors/Preview Content\"";
 				DEVELOPMENT_TEAM = 66PKF55HK5;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SpotifyiOS",
+				);
 				INFOPLIST_FILE = Colors/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -486,6 +509,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nakano.hiromu.Colors;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT)/SpotifyiOS-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
